@@ -35,8 +35,7 @@ defmodule Exbox.Sandbox.Behaviour do
         end
       )
 
-      Module.create namespace, proxy_functions
-
+      Module.create(namespace, proxy_functions, __ENV__)
     end
   end
 

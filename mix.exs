@@ -3,9 +3,9 @@ defmodule Exbox.Mixfile do
 
   def project do
     [ app: :exbox,
-      version: "0.0.2",
-      elixir: "~> 1.3",
-      deps: deps ]
+      version: "0.1.0",
+      elixir: "~> 1.7",
+      deps: deps() ]
   end
 
   # Configuration for the OTP application

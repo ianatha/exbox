@@ -25,7 +25,7 @@ defmodule Exbox.Evaluator do
     {
       :__aliases__,
       meta,
-      Module.split(namespace) ++ aliases
+      Module.concat(Module.split(namespace) ++ aliases)
     }
   end
   defp do_namespace({ token, meta, args }, namespace) when is_list(args) do
