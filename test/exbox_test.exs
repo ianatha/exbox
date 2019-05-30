@@ -3,9 +3,10 @@ defmodule ExboxTest do
   require My.Sandbox
 
   test "the truth" do
-  	q = """
-IO.puts("Hello World!2")
-"""
+    q = """
+    IO.puts("Hello World!2")
+    """
+
     Exbox.Evaluator.evaluate(q, My.Sandbox)
   end
 end

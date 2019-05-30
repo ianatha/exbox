@@ -4,6 +4,6 @@ defmodule Exbox do
   # See http://elixir-lang.org/docs/stable/Application.Behaviour.html
   # for more information on OTP Applications
   def start(_type, _args) do
-    Exbox.Supervisor.start_link
+    Exbox.Supervisor.start_link()
   end
 end
